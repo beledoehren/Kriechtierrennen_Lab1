@@ -8,11 +8,13 @@ namespace Kriechrennen
 {
     internal class Schnecke : Kriechtiere
     {
+        //Konstruktor
         public Schnecke(Random zufall) : base(zufall)
         {
-            symbol = "@";
+            symbol = "@`´";
         }
 
+        //Überschreiben der Methode Krieche()
         public override void Krieche()
         {
             strecke += zufall.Next(2, 5);

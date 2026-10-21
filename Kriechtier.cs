@@ -12,18 +12,21 @@ namespace Kriechrennen
 		protected string symbol;
 		protected Random zufall;
 
-		public Kriechtiere(Random zufall)
+        // Konstruktor, der ein Random-Objekt als Parameter akzeptiert
+        public Kriechtiere(Random zufall)
 		{
 			this.zufall = zufall;
-			this.strecke = 0;
+			this.strecke = 0;		//zurückgelegte Strecke auf 0
 		}
 
-		public int Strecke
+        //Property, um die zurückgelegte Strecke abzufragen
+        public int Strecke
 		{
 			get { return strecke; }
 		}
 
-		public string Visualiesierung
+        //Property für die Visualisierung der zurückgelegten Strecke
+        public string Visualiesierung
 		{
 			get
 			{
@@ -31,6 +34,7 @@ namespace Kriechrennen
 			}
 		}
 
+		//Methode
 		public abstract void Krieche();
 
 	}

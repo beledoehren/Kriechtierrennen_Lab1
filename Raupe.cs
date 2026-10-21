@@ -8,12 +8,14 @@ namespace Kriechrennen
 {
 	internal class Raupe : Kriechtiere
 	{
+		//Konstruktor
 		public Raupe(Random zufall) : base(zufall)
 		{
 			symbol = "ooo<";
 		}
 
-		public override void Krieche()
+        //Überschreiben der Methode Krieche()
+        public override void Krieche()
 		{
 			int zahl = zufall.Next(0, 2);
 
